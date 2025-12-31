@@ -33,106 +33,46 @@ body:not(.article-page):not(.template-search):not(.template-archives) .main-cont
     grid-template-columns: auto 1fr !important;
 }
 
+
 /* ========================================
-   2. 非首页页面：隐藏左边栏
+   2.左边栏隐藏用户名，副标题，社交链接图标
    ======================================== */
 
-/* 搜索页面 - 隐藏左边栏 */
-body.template-search .left-sidebar {
+
+/* 隐藏左侧边栏的用户名 */
+.left-sidebar .site-name {
     display: none !important;
 }
 
-/* 归档页面 - 隐藏左边栏 */
-body.template-archives .left-sidebar {
+/* 隐藏左侧边栏的副标题 */
+.left-sidebar .site-description {
     display: none !important;
 }
 
-/* 文章页面 - 隐藏左边栏 (包括links页面，因为都是 article-page) */
-body.article-page .left-sidebar {
+/* 隐藏社交链接图标 */
+.left-sidebar .menu-social {
     display: none !important;
 }
 
-/* ========================================
-   3. 非首页隐藏左边栏后，调整布局
-   ======================================== */
-
-/* 搜索和归档页面 - 内容居中 */
-body.template-search .main-container,
-body.template-archives .main-container {
-    display: flex !important;
-    justify-content: center !important;
-}
-
-body.template-search main.main,
-body.template-archives main.main {
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-}
 
 /* ========================================
-   4. 文章页：内容居中，保留右侧目录(TOC)
-   ======================================== */
-
-/* 文章页主容器调整 - 让内容和TOC一起居中 */
-body.article-page .main-container {
-    display: flex !important;
-    justify-content: center !important;
-    gap: 20px;
-}
-
-/* 创建一个包裹内容和TOC的居中容器效果 */
-body.article-page main.main {
-    max-width: 800px;
-    flex-shrink: 0;
-}
-
-/* TOC 保持可见，但不影响居中 */
-body.article-page .right-sidebar {
-    display: block !important;
-    flex-shrink: 0;
-    width: 250px;
-    max-width: 250px;
-}
-
-/* 当没有TOC时（如links页面），内容完全居中 */
-body.article-page .main-container:not(:has(.right-sidebar)),
-body.article-page .main-container:has(.right-sidebar:empty) {
-    justify-content: center !important;
-}
-
-/* ========================================
-   5. 分类/标签页面处理
-   ======================================== */
-
-/* 分类和标签页面没有特定的body class，它们和首页一样是空的
-   但它们和首页的区别是：没有右边栏小部件
-   我们可以通过主内容区的特征来区分 */
-
-/* 如果您也想隐藏分类/标签页面的左边栏，取消下面的注释 */
-/*
-body:not(.article-page):not(.template-search):not(.template-archives) .main-container:not(:has(.right-sidebar .widget)) .left-sidebar {
-    display: none !important;
-}
-*/
-
-/* ========================================
-   6. 响应式调整
+   3. 响应式调整
    ======================================== */
 
 @media (max-width: 1024px) {
+
     /* 在小屏幕上隐藏所有边栏 */
     .left-sidebar,
     .right-sidebar {
         display: none !important;
     }
-    
+
     /* 主容器变成单列 */
     .main-container {
         grid-template-columns: 1fr !important;
         display: block !important;
     }
-    
+
     main.main {
         max-width: 100% !important;
         padding: 0 20px;

@@ -17,18 +17,21 @@ emoji = ""
 subtitle = "撑死胆大的，饿死胆小的"
 
 [sidebar.avatar]
-enabled = true
+enabled = false  
 local = true
 src = "img/avatar.png"
 
 [article]
-headingAnchor = false
+headingAnchor = false    #改为false
 math = false
 readingTime = true
 
 [article.license]
 enabled = true
 default = "Licensed under CC BY-NC-SA 4.0"
+
+# 添加自定义 JS
+customJS = ["ts/custom.ts"]
 
 ## Widgets
 [[widgets.homepage]]
@@ -148,3 +151,4 @@ clientSecret = ""
 [comments.cusdis]
 host = ""
 id = ""
+
