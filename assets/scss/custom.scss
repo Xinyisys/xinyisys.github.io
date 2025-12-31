@@ -35,6 +35,36 @@ body:not(.article-page):not(.template-search):not(.template-archives) .main-cont
 
 
 /* ========================================
+   1.5 首页文章列表紧凑样式
+   ======================================== */
+
+/* 减少首页文章列表的间距 */
+body:not(.article-page):not(.template-search):not(.template-archives) .main-container main.main .article-list {
+    gap: 15px !important;
+    /* 原来可能是 40-60px */
+}
+
+/* 减少文章卡片的内边距 */
+body:not(.article-page):not(.template-search):not(.template-archives) .article-list article {
+    margin-bottom: 15px !important;
+}
+
+/* 减少文章详情区域的内边距 */
+body:not(.article-page):not(.template-search):not(.template-archives) .article-details {
+    padding: 10px !important;
+    /* 原来可能是 30-40px */
+}
+
+/* 减少文章标题的外边距 */
+body:not(.article-page):not(.template-search):not(.template-archives) .article-title {
+    margin-bottom: 5px !important;
+}
+
+
+
+
+
+/* ========================================
    2.左边栏隐藏用户名，副标题，社交链接图标
    ======================================== */
 
@@ -54,6 +84,49 @@ body:not(.article-page):not(.template-search):not(.template-archives) .main-cont
     display: none !important;
 }
 
+
+/* ========================================
+   3.分类和标签显示为小按钮样式
+   ======================================== */
+
+/* 让分类列表横向排列 */
+.subsection-list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+}
+
+/* 将卡片样式改为紧凑按钮样式 */
+.subsection-list .article-list--tile {
+    display: inline-block !important;
+    width: auto !important;
+    min-width: auto !important;
+}
+
+.subsection-list article {
+    display: inline-block !important;
+    width: auto !important;
+    height: auto !important;
+    min-height: auto !important;
+}
+
+/* 调整分类详情区域 */
+.subsection-list .article-details {
+    padding: 10px 20px !important;
+    min-height: auto !important;
+    height: auto !important;
+}
+
+/* 调整标题样式 */
+.subsection-list .article-title {
+    font-size: 14px !important;
+    margin: 0 !important;
+}
+
+/* 隐藏图片（如果有） */
+.subsection-list .article-image {
+    display: none !important;
+}
 
 /* ========================================
    3. 响应式调整
