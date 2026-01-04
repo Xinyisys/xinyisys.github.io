@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Xiyee</title><link>https://xinyisys.github.io/post/</link><description>Recent content in Posts on Xiyee</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 04 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://xinyisys.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>2026展望</title><link>https://xinyisys.github.io/p/2026%E5%B1%95%E6%9C%9B/</link><pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate><guid>https://xinyisys.github.io/p/2026%E5%B1%95%E6%9C%9B/</guid><description>&lt;p&gt;&lt;strong&gt;一年一度的新年展望：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;成功上香港教育大学&lt;/li&gt;
+&lt;li&gt;微积分和线性代数学完，并用obsidian做出两本学习笔记&lt;/li&gt;
+&lt;li&gt;再学习两门数学专业课程，并用obsidian做出两本学习笔记&lt;/li&gt;
+&lt;li&gt;计算机类专业书籍2-3本，并用学到的知识开发一个基于ai的数学辅助教学小工具并上线&lt;/li&gt;
+&lt;li&gt;经管类2本。管理学的一定要读一本，此外关于产品运营也可以读一本，研究ai产品变现模型&lt;/li&gt;
+&lt;li&gt;粤语达到能听懂粤语新闻，并能用粤语进行自我介绍的水平&lt;/li&gt;
+&lt;li&gt;存1w块钱&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>Overleaf Tutorial</title><link>https://xinyisys.github.io/p/overleaf-tutorial/</link><pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate><guid>https://xinyisys.github.io/p/overleaf-tutorial/</guid><description>&lt;p&gt;空格 \qquad&lt;/p&gt;
+&lt;p&gt;$\rightarrow$ \rightarrow&lt;/p&gt;
+&lt;p&gt;$\varepsilon$ \varepsilon简写为\ve&lt;/p&gt;
+&lt;p&gt;加减 $\pm$ \pm&lt;/p&gt;
+&lt;p&gt;引用 \lable{lem:名称} \ref{lem:名称} (其他：def, cor, pro, thm, eq)&lt;/p&gt;
+&lt;p&gt;行间公式插入文字：\text{}&lt;/p&gt;
+&lt;p&gt;$\iff$ \iff&lt;/p&gt;
+&lt;p&gt;整除｜ \mid&lt;/p&gt;
+&lt;p&gt;不整除$\nmid$ \nmid&lt;/p&gt;
+&lt;p&gt;$\xi$ \xi&lt;/p&gt;</description></item></channel></rss>
